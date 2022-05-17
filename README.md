@@ -1,16 +1,22 @@
-# projeto_redes
+APP_REDES
 
-A new Flutter project.
+	Version:
+	
+  Android Studio recent version.
+  Flutter 2.0
 
-## Getting Started
+	pubspec.yaml dependencies:
 
-This project is a starting point for a Flutter application.
+  cupertino_icons: ^1.0.2
+  flutter_barcode_scanner: ^2.0.0
+  http: ^0.13.4
+  
+	Screens:
 
-A few resources to get you started if this is your first Flutter project:
+  qrCode: A Screen to read the QRCode after pressing a button
+  HomePage: A Screen to show the product, and inserting the desired quantity to send to stock
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+	Functions:
+	
+  ScanQR (qrCode): After pressing the button, it will read the code and send the product ID to the API to get the product name
+  Cadastrar (HomePage): It's the next step after scan the qrcode, the user will input the product quantity to save it in the internet stock
